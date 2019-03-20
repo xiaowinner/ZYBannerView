@@ -57,13 +57,12 @@ static NSString *banner_footer = @"banner_footer";
 {
     [self addSubview:self.collectionView];
     [self addSubview:self.pageControl];
+    [self updateSubviewsFrame];
 }
 
 - (void)layoutSubviews
 {
     [super layoutSubviews];
-    
-    [self updateSubviewsFrame];
 }
 
 - (void)updateSubviewsFrame
